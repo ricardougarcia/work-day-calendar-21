@@ -27,21 +27,23 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <!-- <div class="container">
-      Timeblocks go here
-     
-      </div> -->
-      <div class="input-group">
+    <!-- Scheduler block -->
+      <div id="scheduler-block" class="input-group">
+        <!-- in-line flex block for static calendar time -->
         <div id="time-container" class="d-inline-flex p-2 bd-highlight">9AM</div>
+        <!-- user input form space -->
         <input
           type="text"
           class="form-control"
           aria-label="Text input with segmented dropdown button"
         /> 
+        <!-- Lock-in button and drop down-->
         <div class="input-group-append">
+          <!-- lock-in button -->
           <button type="button" class="btn btn-outline-secondary">
             Lock-in
           </button>
+          <!-- toggle button -->
           <button
             type="button"
             class="
@@ -64,6 +66,7 @@
         </div>
       </div>
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
