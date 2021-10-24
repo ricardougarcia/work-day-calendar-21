@@ -21,15 +21,48 @@
     <link rel="stylesheet" href="Assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+    <!-- <div class="container">
+      Timeblocks go here
+     
+      </div> -->
+      <div class="input-group">
+        <div id="time-container" class="d-inline-flex p-2 bd-highlight">9AM</div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Text input with segmented dropdown button"
+        /> 
+        <div class="input-group-append">
+          <button type="button" class="btn btn-outline-secondary">
+            Lock-in
+          </button>
+          <button
+            type="button"
+            class="
+              btn btn-outline-secondary
+              dropdown-toggle dropdown-toggle-split
+            "
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
