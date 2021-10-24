@@ -7,14 +7,17 @@ var userTextInput0100 = document.getElementById("user-text-input-0100");
 var lockInButton = document.getElementById("lock-in-button");
 var currentTime = moment().format("hh");
 // console.log(currentTime); + "PM"
+var timeContainer = document.getElementById("time-container");
+// console.log(timeContainer);
+var pElTime = $("div.time-container-class").text();
+// console.log(pElTime);
+var test = $("input.user-text-input-class").text();
+console.log(test);
 
 // --------------------FUNCTIONS--------------------
 // change color of boxes depending on time (past=grey, present=red, future=green)
-// $("placeholder-button").click(function(){
-//     $("#user-text-input-0100").addClass("important blue");
-//   });
 function changeColor() {
-  if (currentTime === "02") {
+  if (currentTime === pElTime) {
     $("#user-text-input-0100").addClass("present");
   }
 }
