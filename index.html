@@ -30,14 +30,20 @@
     <!-- Scheduler block -->
       <div id="scheduler-block-1" class="input-group input-group-lg scheduler-block-class">
         <!-- in-line flex block for static calendar time -->
-        <div id="time-container" class="d-inline-flex p-2 bd-highlight time-container-class">02</div>
+        <div id="time-container" class="d-inline-flex p-2 bd-highlight time-container-class">15</div>
         <!-- user input form space -->
         <input
           id="user-text-input-0100"
+          placeholder="type your event!"
           type="text"
           class="form-control"
-          aria-label="Text input with segmented dropdown button"
-        /> 
+          aria-label="Text input with segmented dropdown button">
+       </input>
+       <!-- <span 
+       id="get-and-place-user-item" 
+       type="text"
+       class="form-control"
+       aria-label="Text input with segmented dropdown button"></span>  -->
         <!-- Lock-in button and drop down-->
         <div class="input-group-append">
           <!-- lock-in button -->
@@ -46,6 +52,7 @@
           </button>
           <!-- toggle button -->
           <button
+            id="clear-button"
             type="button"
             class="
               btn btn-outline-secondary
@@ -65,6 +72,8 @@
             <a class="dropdown-item" href="#">Separated link</a>
           </div>
         </div>
+      
+      
       </div>
     </div>
     
