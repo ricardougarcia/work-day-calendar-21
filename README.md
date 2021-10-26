@@ -22,4 +22,6 @@ You are required to submit the following for review:
 
 - The URL of the GitHub repository: https://github.com/ricardougarcia/work-day-calendar-21.git
 
----
+MIT License
+
+## Copyright (c) [2021] [RicardoGarcia]

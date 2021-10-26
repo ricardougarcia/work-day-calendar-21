@@ -66,19 +66,12 @@ function storeUserInput(event) {
   console.log(userTextInput0100Value);
 }
 
-// TO DO: create for loop to get user inputs and replace in scheduler
-function renderEvents() {
-  for (var i = 0; i < 24; i++) {
-    var event = eventsArray[i];
-  }
-}
-
 // --------------------DESIGN --------------------
 
 // --------------------USER INTERACTIONS--------------------
 // when user clicks lock-in button they will store their text input to local.
 var btnEl = document.getElementsByClassName("btn");
-console.log(btnEl[0]);
+console.log(btnEl);
 for (var i = 0; i < btnEl.length; i++) {
   btnEl[i].addEventListener("click", storeUserInput);
 }
